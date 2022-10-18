@@ -13,9 +13,11 @@ function App() {
     const [num2, setNum2] = React.useState("-")
 
 
-    const randomNum = () => {
-        setNum1(Math.floor(Math.random() * (5) + 1))
-        setNum2(Math.floor(Math.random() * (5) + 1))
+    const generateNum = () => Math.floor(Math.random() * (5) + 1)
+
+    const getNums = () => {
+        setNum1(generateNum())
+        setNum2(generateNum())
     }
 
     const isNum = typeof num1 === "number" && typeof num2 === "number";
@@ -33,7 +35,7 @@ function App() {
                   {num2}
               </h2>
           </div>
-          <button className="btn btn-secondary mb-8" onClick={randomNum}>Button</button>
+          <button className="btn btn-secondary mb-8" onClick={getNums}>Button</button>
           {isNum && num1 === num2 && <h2 className="text-4xl">🎊 MATCH! 🎊</h2>}
       </header>
     </div>
