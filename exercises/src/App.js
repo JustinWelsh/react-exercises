@@ -22,17 +22,19 @@ function App() {
 
     return (
     <div className="App">
-      <header className="App-header">
-          <div className="flex gap-6 p-3">
-              <h1 className="text-6xl font-bold">
+      <header className="App-header px-4">
+          <h1 className="text-6xl text-info font-bold pb-6">Random Number Generator!</h1>
+          <p>Click the button for random numbers between 1-5 and see if you can get a 'match'</p>
+          <div className="flex gap-6 py-6">
+              <h2 className="text-6xl font-bold">
                   {num1}
-              </h1>
-              <h1 className="text-6xl font-bold">
+              </h2>
+              <h2 className="text-6xl font-bold">
                   {num2}
-              </h1>
+              </h2>
           </div>
-          <button className="btn btn-secondary my-5" onClick={randomNum}>Button</button>
-          {isNum && num1 === num2 && <h2>MATCH!</h2>}
+          <button className="btn btn-secondary mb-8" onClick={randomNum}>Button</button>
+          {isNum && num1 === num2 && <h2 className="text-4xl">🎊 MATCH! 🎊</h2>}
       </header>
     </div>
   );
