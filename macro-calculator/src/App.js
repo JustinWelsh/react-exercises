@@ -6,13 +6,9 @@ function App() {
     const [userInput, setUserInput] = useState(null)
     const [proteinCalc, setProteinCalc] = useState(null)
 
-
-
-    const getProtein = () => meatSource * userInput;
-
     return (
     <div className="container mx-auto">
-      <h1 className="text-5xl font-bold text-center p-5">Macro Calculator</h1>
+      <h1 className="text-5xl font-bold text-center p-5 text-white">Macro Calculator</h1>
 
         <div className="form-control w-full max-w-xs mx-auto">
             <label className="label">
