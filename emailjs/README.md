@@ -1,3 +1,7 @@
+# EmailJS
+
+Docs can be accessed here- [EmailJS](https://www.emailjs.com/docs/tutorial/overview/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
