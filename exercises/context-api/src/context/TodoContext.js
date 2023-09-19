@@ -42,6 +42,7 @@ const TodoProvider = ({ children }) => {
 
 // TODO 6: Export the provider component and context
 export { TodoProvider, TodoContext };
+// ! We can move the TodoProvider into it's own component to seperate concerns. Both context and provider can live in the context directory.
 
 /* 
 1.) Create a new context: We create a new context using the createContext function. This context will be used to share state and functions related to the to-do list across components.
