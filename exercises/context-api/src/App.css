@@ -1,3 +1,64 @@
 body {
   background-color: rgb(232, 229, 229);
 }
+
+/* App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.App h1 {
+  color: #333;
+}
+
+.TodoForm {
+  margin-bottom: 20px;
+}
+.TodoForm input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 75%;
+}
+.TodoForm button {
+  /* Button styling */
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todoList ul {
+  text-decoration: none;
+}
+.TodoItem {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TodoItem button {
+  /* Button styling */
+  padding: 8px 16px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.TodoItem.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
