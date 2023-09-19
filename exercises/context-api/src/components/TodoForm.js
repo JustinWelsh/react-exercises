@@ -9,6 +9,7 @@ function TodoForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // TODO: Call the `addTodo` function from context to add a new to-do item
     addTodo(text); //? From context.
     setText("");
   };
