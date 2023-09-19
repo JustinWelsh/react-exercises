@@ -1,22 +1,17 @@
 import "./App.css";
+import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
+import { TodoProvider } from "./context/TodoContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoProvider>
+      <div className="App">
+        <h1>Todo List</h1>
+        <TodoForm />
+        <TodoList />
+      </div>
+    </TodoProvider>
   );
 }
 
